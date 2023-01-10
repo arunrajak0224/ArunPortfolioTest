@@ -32,6 +32,7 @@
     width: auto;
     max-height: 50px;
     max-width: 200px;
+    
     /* margin-top: 8px  ; */
 
 }
@@ -42,15 +43,16 @@
     font-weight: 700;
     cursor: pointer;
 text-decoration: none;
+border-color: var(--bg-black);
 }
 
 .nav-link:hover{
     color:var(--bg-light);
     background-image: var(--gradient);
-    
+    border-color: var(--bg-black);
     transform: translateY(-3px);
     transition: all 0.3s ease 0s;
-     border-radius: 5px;
+     border-radius: 15px;
 }
 
 /* main sectino  */
@@ -63,6 +65,7 @@ text-decoration: none;
     animation-name: arun_animation;
     animation-duration: 5s;
     animation-iteration-count: 1;
+    font-family: var(--secondary-font);
 
 }
 @keyframes arun_animation {
@@ -70,11 +73,6 @@ text-decoration: none;
   100% { opacity: 1; }
     
 }
-
-
-
-
-
 
 .main h3{
     font-size: 5.4rem;
@@ -127,4 +125,143 @@ text-decoration: none;
     transform: translateY(-3px);
     transition: all 0.3s ease 0s;
      border-radius: 5px;
+}
+
+
+/* ------------------------------------------- */
+/* about */
+
+.about img{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+}
+
+.about img:hover{
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.35);
+box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.35);
+
+
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: var(--primary-font);
+}
+
+.progress{
+    background-color: rgb(223, 219,219) ;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+.pro-value5{
+    animation: load5 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+.pro-value6{
+    animation: load6 3s normal forwards;
+    border-radius: 50px;
+    background-color:var(--secondary-color);
+    height: 25px;
+    width: 0;
+
+}
+
+
+.progress p{
+    color: white;
+    padding: 5px;
+}
+@keyframes load1{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:88%
+    }
+}
+@keyframes load2{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:38%
+    }
+}
+@keyframes load3{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:78%
+    }
+}
+@keyframes load4{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:85%
+    }
+}
+@keyframes load5{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:68%
+    }
+}
+@keyframes load6{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:68%
+    }
 }
